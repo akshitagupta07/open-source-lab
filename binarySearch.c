@@ -35,5 +35,13 @@ int main(){
     printf("Enter the key: ");
     scanf("%d", key);
 
+    int ans = binarySearch(arr, n, key);
+    if(ans == -1){
+        printf("Element not present in array");
+    }
+    else{
+        printf("Element is present in array");
+    }
+
     return 0;
 }
